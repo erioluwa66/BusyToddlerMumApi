@@ -42,8 +42,47 @@ const recipes = [
       calcium: "105mg",
       iron: "1mg",
     }),
+
   },
-  // Add more recipes here
+  {
+    recipe_name: "Cinnamon Apple Fritters served with Strawberries and Yogurt",
+    description:
+      "These apple fritters are the perfect soft-textured fritters for babies. They are naturally sweetened with apples and are made with only five simple ingredients, perfect for a quick morning breakfast or snack!",
+    author: "Lily Payen",
+    servings: 8,
+    instructions: JSON.stringify([
+      "Preheat a frying pan over medium heat.",
+      "Grate the apple using the largest hole of a grater. You will want to have about 1/2 cup of grated apples.",
+      "Add the grated apples to a bowl along with the egg, flour, cinnamon, and baking powder. Mix until combined.",
+      "Add 1 tablespoon of butter/oil to the preheated pan. Add one tablespoon of the apple mixture to the pan and press down lightly to form a mini fritter shape.",
+      "Cook the fritters for 2-3 minutes per side, or until golden on both sides.",
+    ]),
+    notes: JSON.stringify([
+      "Honeycrisp apples are naturally crisp and sweet and perfect for this recipe. Fuji apples are a close second, but any sweet apple variety will work.",
+      "This recipe makes 8-9 mini fritters. Double up the ingredients if you plan to store some for a later time.",
+    ]),
+    nutrition: JSON.stringify({
+      calories: 26.74,
+      carbohydrates: "4.7g",
+      protein: "0.95g",
+      fat: "0.58g",
+      saturated_fat: "0.18g",
+      polyunsaturated_fat: "0.12g",
+      monounsaturated_fat: "0.2g",
+      trans_fat: "0.003g",
+      cholesterol: "20.46mg",
+      sodium: "21.33mg",
+      potassium: "34.23mg",
+      fiber: "0.63g",
+      sugar: "2.39g",
+      vitamin_a: "42.17IU",
+      vitamin_c: "1.05mg",
+      calcium: "12.7mg",
+      iron: "0.23mg",
+      course: "Breakfast",
+    }),
+  
+  },
 ];
 
 exports.seed = function (knex) {

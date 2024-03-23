@@ -1,7 +1,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable("recipes", function (table) {
     table.increments("id").primary();
-    table.string("recipe_name").notNullable();
+    table.string("recipe_name").notNullable().unique(); // Ensure recipe names are unique
     table.text("description");
     table.string("author");
     table.string("cuisine");

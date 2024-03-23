@@ -9,6 +9,11 @@ app.use(cors());
 
 const PORT = process.env.PORT || 5050;
 
+const busyToddlerMum = require("./routes/ingredients-recipes");
+
+// all users routes
+app.use("/api", busyToddlerMum);
+
 app.get("/", (req, res) => {
   res.send("Hello from Express!");
 });
