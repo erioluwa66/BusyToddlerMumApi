@@ -10,9 +10,13 @@ app.use(cors());
 const PORT = process.env.PORT || 5050;
 
 const busyToddlerMum = require("./routes/ingredients-recipes");
+const openAiRoutes = require("./routes/foodRoutes");
 
 // all users routes
 app.use("/api", busyToddlerMum);
+
+// Define openAIroutes
+app.use('/api', openAiRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello from Express!");
