@@ -1,7 +1,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable("recipes", function (table) {
     table.increments("id").primary();
-    table.string("recipe_name").notNullable().unique(); // Ensure recipe names are unique
+    table.string("recipe_name").notNullable().unique();
     table.text("description");
     table.string("author");
     table.string("cuisine");
@@ -10,6 +10,7 @@ exports.up = function (knex) {
     table.json("instructions");
     table.json("notes");
     table.json("nutrition");
+    table.string("image"); // New field for image URL
     table.timestamp("created_at").defaultTo(knex.fn.now());
     table.timestamp("updated_at").defaultTo(knex.fn.now());
   });
