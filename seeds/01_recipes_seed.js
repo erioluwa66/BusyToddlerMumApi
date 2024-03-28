@@ -1,5 +1,6 @@
 const recipes = [
   {
+    id: 1,
     recipe_name: "Egg Bake (with Broccoli)",
     description:
       "Transform just a few simple ingredients—including a pile of broccoli—into this protein-packed Egg Bake to share with the kids. It’s an easy breakfast or lunch that stores well and is simple to make ahead.",
@@ -46,6 +47,7 @@ const recipes = [
     }),
   },
   {
+    id: 2,
     recipe_name: "Cinnamon Apple Fritters served with Strawberries and Yogurt",
     description:
       "These apple fritters are the perfect soft-textured fritters for babies. They are naturally sweetened with apples and are made with only five simple ingredients, perfect for a quick morning breakfast or snack!",
@@ -87,6 +89,7 @@ const recipes = [
     }),
   },
   {
+    id: 3,
     recipe_name: "Spinach Banana Pancakes",
     description:
       "These spinach banana pancakes are perfect for baby-led weaning! The bright green color makes them a fun treat your little ones are sure to love!",
@@ -129,6 +132,7 @@ const recipes = [
     }),
   },
   {
+    id: 4,
     recipe_name: "Fluffy Ricotta Pancakes",
     description:
       "With the most delicious fresh lemon flavor and a distinctly fluffy texture, these Ricotta Pancakes are a perfect family breakfast to share—on a holiday or any day.",
@@ -174,6 +178,7 @@ const recipes = [
     }),
   },
   {
+    id: 5,
     recipe_name: "Easy Sausage Egg Muffins",
     description:
       "Whether as a make-ahead breakfast option or a holiday breakfast or brunch to feed a crowd, these Sausage Egg Muffins are such an easy—and yummy—option.",
@@ -222,6 +227,7 @@ const recipes = [
     }),
   },
   {
+    id: 6,
     recipe_name: "Chocolate Baked Oatmeal (With Zucchini)",
     description:
       "This chocolate baked oatmeal is the perfect sweet treat. Made with rolled oats, cocoa powder, and sweetened with maple syrup, it has the perfect gooey texture and is rich chocolate flavor, perfect for any time of day!",
@@ -265,6 +271,7 @@ const recipes = [
     }),
   },
   {
+    id: 7,
     recipe_name: "Baked Raspberry Donuts",
     description:
       "These bright and fresh baked donuts have the texture of a cake donut, but with a zing of fresh fruit.",
@@ -314,6 +321,7 @@ const recipes = [
     }),
   },
   {
+    id: 8,
     recipe_name: "Cheesy Carrot Fritters",
     description:
       "These carrot fritters come together with a few simple ingredients and are perfect to serve up for a quick lunch! They're great served on their own or with your favorite dip!",
@@ -355,6 +363,7 @@ const recipes = [
     }),
   },
   {
+    id: 9,
     recipe_name: "Easy Pinwheel Sandwiches",
     description:
       "Change up the usual sandwich lunch for these easy and fun pinwheel sandwiches. With easy options for the filling to please a variety of eaters, this is a great kids lunch for home or at school. (And yummy for adults, too!)",
@@ -362,8 +371,9 @@ const recipes = [
     cuisine: "American",
     course: "Lunch",
     servings: 1,
-    image: "https://www.yummytoddlerfood.com/wp-content/uploads/2023/05/Pinwheel-Sandwiches-5-horiz.jpg",
-    instructions:JSON.stringify( [
+    image:
+      "https://www.yummytoddlerfood.com/wp-content/uploads/2023/05/Pinwheel-Sandwiches-5-horiz.jpg",
+    instructions: JSON.stringify([
       "Place wrap on a cutting board. If not at room temperature, warm for 5-10 seconds in the microwave so it's pliable and easy to roll.",
       "Spread on any condiments, nut butters, or hummus.",
       "Top with the fruit, veggies, and/or protein.",
@@ -395,6 +405,7 @@ const recipes = [
     }),
   },
   {
+    id: 10,
     recipe_name: "Broccoli Tots",
     description:
       "These broccoli tots are a fun way to serve up some broccoli. They are a great way of incorporating more veggies into your little one’s meals!",
@@ -402,8 +413,9 @@ const recipes = [
     cuisine: "English",
     course: "Lunch",
     servings: 28,
-    image: "https://feedingtinybellies.com/wp-content/uploads/2023/03/Broccoli-tots-served-with-corn.jpg",
-    instructions: JSON.stringify( [
+    image:
+      "https://feedingtinybellies.com/wp-content/uploads/2023/03/Broccoli-tots-served-with-corn.jpg",
+    instructions: JSON.stringify([
       "Preheat the oven to 375 degrees F (190 degrees C).",
       "Add broccoli florets to a microwave-safe bowl with 2 tablespoons of water and microwave on high for 3-5 minutes, or until the broccoli is soft and fork-tender. You may also boil the broccoli in a small pot of boiling water for 3 minutes. Drain and finely chop into small pieces. I used kitchen scissors to finely chop the florets, but you may also use a food processor.",
       "Add the breadcrumbs, shredded cheese, egg, onion powder, garlic powder, and salt to the bowl with the broccoli. Mix until well combined.",
@@ -414,7 +426,7 @@ const recipes = [
       "I used kitchen scissors to chop up the florets, but you can also use a food processor or blender to get smaller pieces. I left some chunks in for some added texture, but feel free to chop them up smaller for a more “tot-like” texture.",
       "I used cheddar cheese in this recipe for added flavor. Mozzarella cheese is a good low-sodium alternative if you are preparing these tots for a baby.",
     ]),
-    nutrition: JSON.stringify( {
+    nutrition: JSON.stringify({
       calories: 24.17,
       carbohydrates: "1.97g",
       protein: "1.62g",
@@ -435,6 +447,7 @@ const recipes = [
     }),
   },
   {
+    id: 11,
     recipe_name: "Air Fryer Green Beans",
     description:
       "These air fryer green beans are easy to make for a quick dinner side dish! In less than 10 minutes, you’ll have them prepped and ready to serve!",
@@ -442,8 +455,9 @@ const recipes = [
     cuisine: "English",
     course: "snacks",
     servings: 4,
-    image: "https://feedingtinybellies.com/wp-content/uploads/2021/10/IMG_8274.jpg",
-    instructions:JSON.stringify( [
+    image:
+      "https://feedingtinybellies.com/wp-content/uploads/2021/10/IMG_8274.jpg",
+    instructions: JSON.stringify([
       "Wash the green beans and pat dry.",
       "Coat the green beans with oil, garlic powder, and black pepper. Salt may be added after removing baby's portion.",
       "Place the green beans in the air fryer basket. Try to make sure that the green beans do not overlap too much.",
@@ -454,7 +468,7 @@ const recipes = [
       "If you prefer softer green beans, add a few minutes to the cook time. When making them for my little guys, I usually air fry the green beans for 9-10 minutes to make them more tender.",
       "After removing baby’s portion, toss the green beans with a little salt to taste for everyone else!",
     ]),
-    nutrition:JSON.stringify( {
+    nutrition: JSON.stringify({
       calories: 69.2,
       carbohydrates: "8.61g",
       protein: "2.23g",
@@ -473,6 +487,7 @@ const recipes = [
     }),
   },
   {
+    id: 12,
     recipe_name: "Air Fryer Naan Pizza",
     description:
       "This air fryer naan pizza is the perfect simple lunch idea! You can customize it with your favorite toppings and in under 10 minutes you'll have lunch ready to serve!",
@@ -480,8 +495,9 @@ const recipes = [
     cuisine: "English",
     course: "Lunch",
     servings: 8,
-    image: "https://feedingtinybellies.com/wp-content/uploads/2024/02/Mini-naan-pizzas.jpg",
-    instructions: JSON.stringify( [
+    image:
+      "https://feedingtinybellies.com/wp-content/uploads/2024/02/Mini-naan-pizzas.jpg",
+    instructions: JSON.stringify([
       "Place the naan dippers on the air fryer basket (or air-fryer-safe parchment liner) in an even layer so that they do not overlap. I love using air fryer liners so that cheese doesn't fall into the air fryer basket.",
       "Spoon 1 tablespoon of pizza sauce evenly on each naan dipper",
       "Sprinkle 1 to 2 tablespoons of mozzarella cheese on top of each piece of naan. Top with toppings of choice",
@@ -512,6 +528,7 @@ const recipes = [
     }),
   },
   {
+    id: 13,
     recipe_name: "Air Fryer Sweet Potatoes",
     description:
       "These air fryer sweet potatoes are a sweet and savory combo that are a perfect lunch or dinner side!",
@@ -528,7 +545,7 @@ const recipes = [
       "Place the potatoes in the air fryer basket. Try to make sure that the potatoes do not overlap too much.",
       "Cook the potatoes at 400 degrees F for 13-15 minutes, shaking the basket halfway through.",
     ]),
-    notes: JSON.stringify( [
+    notes: JSON.stringify([
       "Make sure not to overcrowd the air fryer basket. If the basket is too full, the potatoes will not cook evenly. I love this size and functionality of this ninja air fryer!",
       "After removing baby’s portion, toss the remaining potatoes with a little salt to taste for everyone else!",
       "When my son was between the age of 6-9 months, I cut the potatoes into finger-length strips. Once he mastered the pincer grasp, around 9-10 months of age, I began dicing the potatoes into small squares.",
@@ -552,6 +569,7 @@ const recipes = [
     }),
   },
   {
+    id: 14,
     recipe_name: "Air Fryer Salmon",
     description:
       "This air fryer salmon is ready to serve in just 10 minutes! It is soft and flaky and comes out perfect every time!",
@@ -561,14 +579,14 @@ const recipes = [
     servings: 2,
     image:
       "https://feedingtinybellies.com/wp-content/uploads/2021/10/IMG_8404.jpg",
-    instructions: JSON.stringify( [
+    instructions: JSON.stringify([
       "Mix together the paprika, garlic powder, onion powder, black pepper, and salt until combined to form the seasoning blend.",
       "Coat the salmon in oil and season with the seasoning blend.",
       "Place the salmon in the air fryer basket. If your salmon has skin, place the salmon skin side down.",
       "Cook the salmon at 390 degrees F for 8 to 10 minutes.",
       "Check the salmon for doneness with a fork. Add another 1-2 minutes depending on the thickness of your salmon filet.",
     ]),
-    notes:JSON.stringify( [
+    notes: JSON.stringify([
       "Make sure not to overcrowd the air fryer basket. I usually place no more than 2 fillets in the basket at a time, but this may vary depending on the size of your air fryer basket. I love the size and functionality of this ninja air fryer!",
       "For my baby, I season filet portions without salt and love to use a Cajun seasoning blend for everyone else.",
       "Beware of potential bones in salmon! Always run your fingers through the fish and pick out any bones. I always buy boneless filets, but still run my fingers through it to ensure that there are no bones.",
@@ -593,6 +611,7 @@ const recipes = [
     }),
   },
   {
+    id: 15,
     recipe_name: "Air Fryer Chicken Wings",
     description:
       "These air fryer chicken wings are so easy to make and come out perfect every time. They are crispy, yet tender, without all of the extra fat!",
@@ -600,8 +619,9 @@ const recipes = [
     cuisine: "English",
     course: "Dinner",
     servings: 4,
-    image: "https://feedingtinybellies.com/wp-content/uploads/2021/12/IMG_1584.jpg",
-    instructions: JSON.stringify( [
+    image:
+      "https://feedingtinybellies.com/wp-content/uploads/2021/12/IMG_1584.jpg",
+    instructions: JSON.stringify([
       "Coat the chicken wings in oil and seasonings. Make sure each piece is fully coated.",
       "Place the chicken wings in the air fryer basket. Make sure not to overcrowd the basket and that the pieces do not overlap to ensure even cooking.",
       "Air fry the chicken at 360 degrees F for 12 minutes.",
@@ -609,13 +629,13 @@ const recipes = [
       "Open the air fryer basket and give it a shake. Increase the temperature to 400 degrees F and air fry the chicken for an additional 5 minutes.",
       "Transfer the chicken to a bowl and coat in a sauce if desired.",
     ]),
-    notes: JSON.stringify( [
+    notes: JSON.stringify([
       "Make sure not to overcrowd the air fryer basket. Try to make sure that the chicken pieces are not overlapping so that they cook evenly. You may have to cook the wings in batches depending on the size of your air fryer. I love the size and functionality of this ninja air fryer!",
       "I love using tony’s seasoning blend for these wings. It is an all-in-one seasoning spice, packed with flavor.",
       "I prefer sweeter barbeque sauces for my family, but I like to use the primal kitchen barbeque sauce as a sugar-free option for my baby.",
       "Make sure to debone the wings before serving them to your baby.",
     ]),
-    nutrition:JSON.stringify( {
+    nutrition: JSON.stringify({
       calories: 466.84,
       carbohydrates: "2.29g",
       protein: "35.56g",

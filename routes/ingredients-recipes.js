@@ -12,7 +12,7 @@ router
   .get(ingredientsController.getIngredientsByRecipeId);
 
 router
-  .route("/recipes/:recipeId")
+  .route("/recipes/:id")
   .get(recipesController.getRecipeById);
 
 

@@ -13,6 +13,7 @@ const getAllRecipes = async (req, res) => {
 
 
 
+
 // Controller function to get a single recipe by its ID along with its ingredients
 const getRecipeById = async (req, res) => {
   const { id } = req.params;
@@ -23,9 +24,7 @@ const getRecipeById = async (req, res) => {
       return res.status(404).json({ message: "Recipe not found" });
     }
     // Query the database for ingredients related to the recipe
-    const ingredients = await knex("ingredients")
-      .join("recipe_ingredients", "ingredients.id", "recipe_ingredients.ingredient_id")
-      .where({ "recipe_ingredients.recipe_id": id });
+    const ingredients = await knex("ingredients").where({ recipe_id: id });
     recipe.ingredients = ingredients;
     res.json(recipe);
   } catch (error) {

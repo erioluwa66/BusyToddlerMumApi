@@ -1,11 +1,12 @@
 exports.up = function (knex) {
   return knex.schema.createTable("ingredients", function (table) {
     table.increments("id").primary();
-   table.integer("recipe_id").unsigned().notNullable(); // Use recipe_id as a foreign key
    table
-     .foreign("recipe_id")
+     .integer("recipe_id")
+     .unsigned()
      .references("id")
      .inTable("recipes")
+     .onUpdate("CASCADE")
      .onDelete("CASCADE");
     table.string("ingredient").notNullable();
     table.string("quantity");
