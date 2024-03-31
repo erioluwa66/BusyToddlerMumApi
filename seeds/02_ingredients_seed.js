@@ -630,8 +630,193 @@ exports.seed = function (knex) {
           ingredient: "black pepper",
           quantity: "⅛ tsp",
         },
-      ];
 
+        {
+          recipe_id: 17,
+          ingredient: "Greek yogurt",
+          quantity: "2 cups",
+        },
+        {
+          recipe_id: 17,
+          ingredient: "maple syrup",
+          quantity: "2 tbsp",
+        },
+        {
+          recipe_id: 17,
+          ingredient: "diced strawberries",
+          quantity: "½ cup",
+        },
+        {
+          recipe_id: 17,
+          ingredient: "sliced blueberries",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 17,
+          ingredient: "crushed granola",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "fresh spinach",
+          quantity: "2 cups",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "chopped walnuts",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "parmesan cheese, grated",
+          quantity: "2 ½ tbsp",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "olive oil",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "garlic powder",
+          quantity: "¼ tsp",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "salt",
+          quantity: "¼ – ½ tsp",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "black pepper",
+          quantity: "⅛ tsp",
+        },
+        {
+          recipe_id: 18,
+          ingredient: "pasta",
+          quantity: "4-6 oz",
+        },
+        {
+          recipe_id: 19,
+          ingredient: "small tortillas",
+          quantity: "6 (corn or flour)",
+        },
+        {
+          recipe_id: 19,
+          ingredient: "shredded cheddar cheese",
+          quantity: "1 1/2 cups",
+        },
+        {
+          recipe_id: 19,
+          ingredient: "pinto beans",
+          quantity: "1 1/2 cups (or one 14-ounce can)",
+        },
+        {
+          recipe_id: 20,
+          ingredient: "pumpkin puree",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 20,
+          ingredient: "cream cheese",
+          quantity: "3 tbsp",
+        },
+        {
+          recipe_id: 20,
+          ingredient: "pumpkin spice",
+          quantity: "¼ tsp",
+        },
+        {
+          recipe_id: 20,
+          ingredient: "pasta noodles",
+          quantity: "2 cups",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "neutral cooking oil",
+          quantity: "2 tbsp",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "diced vegetables",
+          quantity: "6 cups",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "garlic cloves",
+          quantity: "2",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "diced tomatoes with juices",
+          quantity: "1 can (28-ounce)",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "beans",
+          quantity: "3 cans (14.5-ounce each)",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "salt",
+          quantity: "1 tsp",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "cumin",
+          quantity: "3 tsp",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "frozen corn",
+          quantity: "1 bag (16-ounce)",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "vegetable or chicken stock",
+          quantity: "1 quart",
+        },
+        {
+          recipe_id: 21,
+          ingredient: "lime juice",
+          quantity: "1/4 cup",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "very ripe banana",
+          quantity: "1 large",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "milk",
+          quantity: "⅓ cup",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "egg",
+          quantity: "1",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "vanilla extract",
+          quantity: "¼ tsp",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "cinnamon",
+          quantity: "¼ tsp",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "old fashioned rolled oats",
+          quantity: "1 cup",
+        },
+        {
+          recipe_id: 22,
+          ingredient: "berries",
+          quantity: "½ cup",
+        }
+      ];
       return knex("ingredients").insert(ingredients);
     });
 };
