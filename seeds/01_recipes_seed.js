@@ -232,8 +232,8 @@ const recipes = [
     description:
       "This chocolate baked oatmeal is the perfect sweet treat. Made with rolled oats, cocoa powder, and sweetened with maple syrup, it has the perfect gooey texture and is rich chocolate flavor, perfect for any time of day!",
     author: "Lily Payen",
-    cuisine: "Unknown",
-    course: "Unknown",
+    cuisine: "English",
+    course: "Breakfast",
     servings: 8,
     image:
       "https://feedingtinybellies.com/wp-content/uploads/2024/02/Chocolate-baked-oatmeal.jpg",
@@ -453,7 +453,7 @@ const recipes = [
       "These air fryer green beans are easy to make for a quick dinner side dish! In less than 10 minutes, you’ll have them prepped and ready to serve!",
     author: "Lily Payen",
     cuisine: "English",
-    course: "snacks",
+    course: "Snacks",
     servings: 4,
     image:
       "https://feedingtinybellies.com/wp-content/uploads/2021/10/IMG_8274.jpg",
@@ -533,8 +533,8 @@ const recipes = [
     description:
       "These air fryer sweet potatoes are a sweet and savory combo that are a perfect lunch or dinner side!",
     author: "Lily Payen",
-    cuisine: "Unknown",
-    course: "Dinner Side",
+    cuisine: "English",
+    course: "Dinner",
     servings: 4,
     image:
       "https://feedingtinybellies.com/wp-content/uploads/2021/10/IMG_8367-1.jpg",
