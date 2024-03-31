@@ -655,6 +655,51 @@ const recipes = [
       iron: "2.78mg",
     }),
   },
+  {
+    id: 16, // Assume the next ID for this new recipe is 16
+    recipe_name: "Savory Vegetable Muffins",
+    description:
+      "These vegetable muffins are soft, fluffy, and perfect for babies and toddlers. They are a great way to get more veggies into a meal and make a perfect lunch or snack!",
+    author: "Lily Payen",
+    cuisine: "English", // or another appropriate cuisine
+    course: "Snack", // or "Breakfast" or "Lunch" based on when it's appropriate to eat
+    servings: 24, // number of mini muffins
+    image:
+      "https://feedingtinybellies.com/wp-content/uploads/2022/02/Veggie-muffins-served-with-broccoli.jpg", // URL to an image of the muffins if you have one
+    instructions: JSON.stringify([
+      "Preheat the oven to 350 degrees F (180 degrees C).",
+      "Whisk together the egg, milk, oil, and cheese in a bowl until combined.",
+      "Add in the chopped/grated vegetables and mix until incorporated.",
+      "Add in the dry ingredients (flour, baking powder, salt, and pepper) and mix just until they are incorporated into the batter. Do not over mix.",
+      "Scoop out tablespoon-sized portions into a mini muffin pan. I was able to make 24 mini muffins.",
+      "Bake the muffins at 350 degrees F for 15 minutes (or until a toothpick comes out clean). Let them cool in the pan for 5 minutes and transfer the muffins to a wire rack to finish cooling. Let the muffins cool completely before serving.",
+    ]),
+    notes: JSON.stringify([
+      "Only use the top part of the broccoli florets. Avoid using the stems as they are a little rougher in texture, but don’t throw them out!",
+      "I used the smallest size hole on my box cheese grater when shredding the carrots. I wanted the carrot pieces to merge seamlessly into the muffins, but feel free to use a larger size hole if you prefer larger carrot chunks.",
+      "When making muffins, I like to use a silicone muffin pan to bake them as they pop out easily without any sticking. If using a regular mini muffin pan, be sure to coat with a cooking spray beforehand. Avoid using paper liners as these muffins tend to stick.",
+      "Omit the salt if you are making these muffins for a younger baby. They will have a little less taste but will still have great flavor from the cheese!",
+    ]),
+    nutrition: JSON.stringify({
+      calories: "56.68kcal",
+      carbohydrates: "4.9g",
+      protein: "1.6g",
+      fat: "3.45g",
+      saturated_fat: "0.97g",
+      polyunsaturated_fat: "0.34g",
+      monounsaturated_fat: "1.98g",
+      trans_fat: "0.01g",
+      cholesterol: "9.8mg",
+      sodium: "108.06mg",
+      potassium: "28.48mg",
+      fiber: "0.25g",
+      sugar: "0.44g",
+      vitamin_a: "345.48IU",
+      vitamin_c: "0.98mg",
+      calcium: "45.34mg",
+      iron: "0.36mg",
+    }),
+  },
 ];
 
 exports.seed = function (knex) {

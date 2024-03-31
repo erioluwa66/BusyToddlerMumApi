@@ -225,7 +225,8 @@ exports.seed = function (knex) {
         },
         {
           recipe_id: 6,
-          ingredient: "finely grated zucchini, do not squeeze out liqurecipe_id",
+          ingredient:
+            "finely grated zucchini, do not squeeze out liqurecipe_id",
           quantity: "⅓ cup",
         },
         {
@@ -573,6 +574,61 @@ exports.seed = function (knex) {
           recipe_id: 15,
           ingredient: "black pepper",
           quantity: "¼ tsp",
+        },
+        {
+          recipe_id: 16, // Assuming this is the ID for the new recipe
+          ingredient: "grated carrots",
+          quantity: "⅓ cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "finely chopped broccoli floret heads",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "corn kernels",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "egg",
+          quantity: "1",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "milk",
+          quantity: "½ cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "mild tasting oil/melted butter",
+          quantity: "¼ cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "shredded cheddar cheese",
+          quantity: "½ cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "all purpose flour",
+          quantity: "1 cup",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "baking powder",
+          quantity: "2 tsp",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "salt",
+          quantity: "½ tsp",
+        },
+        {
+          recipe_id: 16,
+          ingredient: "black pepper",
+          quantity: "⅛ tsp",
         },
       ];
 
