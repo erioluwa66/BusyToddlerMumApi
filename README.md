@@ -1,4 +1,4 @@
-# BusyToddlerMumgit add  API
+# BusyToddlerMum  API
 
 This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyToddlerMumApi).
 
@@ -38,8 +38,6 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
         CREATE DATABASE busyToddlerMum;
 
         ```
-
-    <br>
 
 6.  Create database tables with knex migrations
     `    npm run migrate
