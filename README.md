@@ -40,12 +40,12 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
         ```
 
 6.  Create database tables with knex migrations
-    `    npm run migrate
+    `    npm run db:migrate
    `
     <br>
 
 7.  Seed the tables with recipe and ingredients
-    `    npm run seed
+    `    npm run db:seed
    `
     <br>
 
