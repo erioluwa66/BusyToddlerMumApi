@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+# MySql Database
+  mysqldb:
+    image: mysql:5.7
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_LOCAL_PASSWORD}
+      MYSQL_DATABASE: ${DB_LOCAL_DBNAME}
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: ${DB_LOCAL_PASSWORD}
+    ports:
+      - "3306:3306"  # MySQL default port mapping
+    volumes:
+      - db:/var/lib/mysql
+# Backend application
+  app:
+    depends_on:
+      - mysqldb
+    build: .
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - "${PORT}:${PORT}"  # Node.js application port mapping
+    environment:
+      DB_HOST: mysqldb
+      DB_USER: myuser
+      DB_PASSWORD: ${DB_LOCAL_PASSWORD}
+      DB_NAME: ${DB_LOCAL_DBNAME}
+      DB_PORT: 3306      # Port inside the container, usually the default MySQL port
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    stdin_open: true
+    tty: true
+    
+
+#Frontend application
+  frontend:
+    build:
+      context: ../busytoddlermumclient #Update this with the relative path to your front end repository
+    ports:
+      - 80:80 #This will expose your frontend on port 80 of the host
+    depends_on:
+      - app #this app needs the backend to be up before frontend
+
+volumes: 
+  db:
+

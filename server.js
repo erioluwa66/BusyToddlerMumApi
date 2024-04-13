@@ -7,7 +7,7 @@ require("dotenv").config();
 app.use(express.json());
 app.use(cors());
 
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 3000;
 
 const busyToddlerMum = require("./routes/ingredients-recipes");
 const openAiRoutes = require("./routes/foodRoutes");
