@@ -60,3 +60,29 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
     ```
     npm start
     ```
+# Docker Container Setup
+
+## Building and Running with Docker
+
+1. Using Docker Compose:
+    `   docker-compose up --build
+   `
+    <br>
+2. If needed, apply migrations and seed the database
+     ```
+    docker-compose run app npm run 
+    ``` 
+    ```
+    docker-compose run app npm run db:seed
+     ```
+Replace app with the actual service name defined in your docker-compose.yml.
+
+3. ensure to change the file path in the docker compose file to the correct relative path for front-end
+ `   context: ../busytoddlermumclient
+   `
+    <br>
+4. Remember to stop and remove containers before rerunning them if needed:
+     `   docker-compose down
+   `
+    <br>
+
