@@ -70,7 +70,7 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
     <br>
 2. If needed, apply migrations and seed the database
      ```
-    docker-compose run app npm run 
+    docker-compose run app npm run db:migrate
     ``` 
     ```
     docker-compose run app npm run db:seed
