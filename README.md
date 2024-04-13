@@ -60,9 +60,9 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
     ```
     npm start
     ```
-# Docker Container Setup
+## Docker Container Setup
 
-## Building and Running with Docker
+### Building and Running with Docker
 
 1. Using Docker Compose:
     `   docker-compose up --build
