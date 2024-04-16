@@ -1,6 +1,6 @@
 # BusyToddlerMum  API
 
-This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyToddlerMumApi).
+This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyToddlerMums).
 
 ## Backend Tech Stack
 
@@ -18,7 +18,7 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
 <br>
 
 2. Install nodeJS dependencies
-   `    npm i
+   `    npm install
    `
    <br>
 
@@ -33,11 +33,10 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
 <br>
 
 5.  Create and select the BusyToddlerMum database in a separate mysql terminal. Enter your password when prompted.
-    ```
 
-        CREATE DATABASE busyToddlerMum;
-
-        ```
+ `   CREATE DATABASE busyToddlerMum;
+   `
+   <br>
 
 6.  Create database tables with knex migrations
     `    npm run db:migrate
@@ -65,6 +64,7 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
 ### Building and Running with Docker
 
 1. Using Docker Compose:
+    Ensure Docker Desktop is running before executing these commands:
     `   docker-compose up --build
    `
     <br>
@@ -75,7 +75,7 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
     ```
     docker-compose run app npm run db:seed
      ```
-Replace app with the actual service name defined in your docker-compose.yml.
+Replace 'app' with the actual service name defined in your docker-compose.yml.
 
 3. ensure to change the file path in the docker compose file to the correct relative path for front-end
  `   context: ../busytoddlermumclient
