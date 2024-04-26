@@ -33,11 +33,18 @@ jobs:
           registries: ${{ secrets.AWS_ACCOUNT_ID }}
           mask-password: "true" # see: https://github.com/aws-actions/amazon-ecr-login#docker-credentials
 
-    - name: Build and Push Docker Image using Docker Compose
+    - name: Build Docker Image using Docker Compose
       run: |
         docker-compose -f docker-compose.yml build app
-        docker tag ${{ steps.login-ecr.outputs.registry }}:${{ github.sha }} ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
-        docker push ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
+
+    - name: List Docker Images
+      run: |
+        docker images
+
+    - name: Tag and Push Docker Image
+      run: |
+        docker tag ${DOCKER_IMAGE_NAME}:${GITHUB_SHA} ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${GITHUB_SHA}
+        docker push ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${GITHUB_SHA}
       env:
         AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
@@ -45,3 +52,4 @@ jobs:
         DB_LOCAL_DBNAME: ${{ secrets.DB_LOCAL_DBNAME }}
         PORT: "5050"
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        DOCKER_IMAGE_NAME: "app"
