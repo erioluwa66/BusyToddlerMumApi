@@ -33,9 +33,10 @@ jobs:
           registries: ${{ secrets.AWS_ACCOUNT_ID }}
           mask-password: "true" # see: https://github.com/aws-actions/amazon-ecr-login#docker-credentials
 
-    - name: Build and Push Docker Image
+    - name: Build and Push Docker Image using Docker Compose
       run: |
-        docker build -t ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}  
+        docker-compose -f docker-compose.yml build app
+        docker tag busytoddlermum_backend:latest ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
         docker push ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
       env:
         AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
