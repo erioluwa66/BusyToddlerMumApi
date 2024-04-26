@@ -35,6 +35,10 @@ jobs:
 
     - name: Build and Push Docker Image using Docker Compose
       run: |
+        export DB_LOCAL_PASSWORD=${{ secrets.DB_LOCAL_PASSWORD }}
+        export DB_LOCAL_DBNAME=${{ secrets.DB_LOCAL_DBNAME }}
+        export PORT=5050  # Specify a default port if not set
+        export OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
         docker-compose -f docker-compose.yml build app
         docker tag busytoddlermum_backend:latest ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
         docker push ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
