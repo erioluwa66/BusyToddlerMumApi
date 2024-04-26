@@ -5,14 +5,14 @@ services:
   mysqldb:
     image: mysql:5.7
     restart: unless-stopped
-    # env_file: ./.env
+    env_file: ./.env
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_LOCAL_PASSWORD}
       MYSQL_DATABASE: ${DB_LOCAL_DBNAME}
       MYSQL_USER: myuser
       MYSQL_PASSWORD: ${DB_LOCAL_PASSWORD}
     ports:
-      - "3306:3306"  # MySQL default port mapping
+      - "3307:3306"  # MySQL default port mapping
     volumes:
       - db:/var/lib/mysql
 # Backend application
@@ -21,7 +21,7 @@ services:
       - mysqldb
     build: .
     restart: unless-stopped
-    # env_file: ./.env
+    env_file: ./.env
     ports:
       - "${PORT}:${PORT}"  # Node.js application port mapping
     environment:
@@ -35,14 +35,14 @@ services:
     tty: true
     
 
-# #Frontend application
-#   frontend:
-#     build:
-#       context: ../busytoddlermumclient #Update this with the relative path to your front end repository
-#     ports:
-#       - 80:80 #This will expose your frontend on port 80 of the host
-#     depends_on:
-#       - app #this app needs the backend to be up before frontend
+#Frontend application
+  frontend:
+    build:
+      context: ../busytoddlermumclient #Update this with the relative path to your front end repository
+    ports:
+      - 80:80 #This will expose your frontend on port 80 of the host
+    depends_on:
+      - app #this app needs the backend to be up before frontend
 
 volumes: 
   db:
