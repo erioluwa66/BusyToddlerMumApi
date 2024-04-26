@@ -36,7 +36,7 @@ jobs:
     - name: Build and Push Docker Image using Docker Compose
       run: |
         docker-compose -f docker-compose.yml build app
-        docker tag ${{ steps.login-ecr.outputs.registry }}/app:${{ github.sha }} ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
+        docker tag ${{ steps.login-ecr.outputs.registry }}:${{ github.sha }} ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
         docker push ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
       env:
         AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
