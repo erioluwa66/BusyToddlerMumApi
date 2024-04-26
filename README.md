@@ -9,6 +9,11 @@ This is the backend API of [BusyToddlerMum](https://github.com/erioluwa66/BusyTo
 - Knex
 - Mysql
 
+## Features
+
+- Provides API endpoints for managing recipes and meal plans.
+- Handles user authentication and data storage with MySQL.
+
 ## Setup
 
 1. Get an OpenAi API Key
@@ -86,3 +91,17 @@ Replace 'app' with the actual service name defined in your docker-compose.yml.
    `
     <br>
 
+## Deployment
+- Automated CI/CD is set up using GitHub Actions to build, test, and push the Docker image to AWS ECR.
+- The Docker image can be deployed on AWS ECS or any other container orchestration service that supports Docker.
+
+## Continuous Integration and Deployment
+- The GitHub Actions workflow includes steps to check code integrity, build the Docker image, and push it to AWS ECR. The image is then ready to be deployed in a production environment.
+
+## Security
+- Implements basic security best practices including environment variable management, secure headers, and API rate limiting.
+
+## Future Enhancements
+- Implement more comprehensive user authentication.
+- Expand the API to support more complex data interactions.
+- Improve scalability by optimizing Docker configurations and implementing more robust cloud deployment patterns.
