@@ -21,7 +21,6 @@ services:
       - mysqldb
     build: .
     restart: unless-stopped
-    # env_file: ./.env
     ports:
       - "${PORT}:${PORT}"  # Node.js application port mapping
     environment:
