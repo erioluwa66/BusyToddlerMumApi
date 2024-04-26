@@ -35,14 +35,14 @@ services:
     tty: true
     
 
-#Frontend application
-  frontend:
-    build:
-      context: ../busytoddlermumclient #Update this with the relative path to your front end repository
-    ports:
-      - 80:80 #This will expose your frontend on port 80 of the host
-    depends_on:
-      - app #this app needs the backend to be up before frontend
+# #Frontend application
+#   frontend:
+#     build:
+#       context: ../busytoddlermumclient #Update this with the relative path to your front end repository
+#     ports:
+#       - 80:80 #This will expose your frontend on port 80 of the host
+#     depends_on:
+#       - app #this app needs the backend to be up before frontend
 
 volumes: 
   db:
