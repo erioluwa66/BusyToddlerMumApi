@@ -35,8 +35,8 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build -t ${{ secrets.FRONTEND_ECR_REPOSITORY_URL }}:${{ github.sha }} -f Dockerfile .
-        docker push ${{ secrets.FRONTEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
+        docker build -t ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }} ./backend  # Make sure the path to Dockerfile is correct.
+        docker push ${{ secrets.BACKEND_ECR_REPOSITORY_URL }}:${{ github.sha }}
       env:
         AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
         AWS_REGION: ${{ secrets.AWS_REGION }}
